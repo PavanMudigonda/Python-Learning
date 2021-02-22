@@ -2,11 +2,12 @@ def add_prices(basket):
 	# Initialize the variable that will be used for the calculation
 	total = 0
 	# Iterate through the dictionary items
-	for ___:
+	for item in basket:
+
 		# Add each price to the total calculation
 		# Hint: how do you access the values of
 		# dictionary items?
-		total += ___
+		total += basket[item]
 	# Limit the return value to 2 decimal places
 	return round(total, 2)
 
