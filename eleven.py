@@ -7,6 +7,6 @@ def longest_word(word1, word2, word3):
 		word = word3
 	return(word)
 
-print(longest_word("chair", "couch", "table"))
+print(longest_word("chairs", "couch", "table"))
 print(longest_word("bed", "bath", "beyond"))
 print(longest_word("laptop", "notebook", "desktop"))
