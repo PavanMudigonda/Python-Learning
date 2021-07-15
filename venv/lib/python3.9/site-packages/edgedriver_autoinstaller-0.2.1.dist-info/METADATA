@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: edgedriver-autoinstaller
+Version: 0.2.1
+Summary: Automatically install edgedriver that supports the currently installed version of edge.
+Home-page: https://github.com/fc-dev/python-edgedriver-autoinstaller
+Author: Federico Capece
+Author-email: capece.1744999@studenti.uniroma1.it
+License: MIT
+Keywords: edgedriver edge selenium splinter
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: System :: Installation/Setup
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# edgedriver-autoinstaller
+Automatically download and install [edgedriver](https://edgedriver.chromium.org/) that supports the currently installed version of edge. This installer supports Linux, MacOS and Windows operating systems.
+
+## Installation
+
+```bash
+pip install edgedriver-autoinstaller
+```
+
+## Usage
+Just type `import edgedriver_autoinstaller` in the module you want to use edgedriver.
+
+## Example
+```
+from selenium import webdriver
+import edgedriver_autoinstaller
+
+
+edgedriver_autoinstaller.install()  # Check if the current version of edgedriver exists
+                                      # and if it doesn't exist, download it automatically,
+                                      # then add edgedriver to path
+
+driver = webdriver.Edge(executable_path="msedgedriver.exe")
+driver.get("http://www.python.org")
+assert "Python" in driver.title
+```
+
+## Note
+
+Forked from: [python-chromedriver-autoinstaller](https://github.com/yeongbin-jo/python-chromedriver-autoinstaller)
+
+Most of the work has been done by [yeongbin-jo](https://github.com/yeongbin-jo/), i only adapted it for Edge.
+
