@@ -1,0 +1,35 @@
+Metadata-Version: 2.0
+Name: robotframework-excel
+Version: 1.0.0b4
+Summary: Robot Framework
+Home-page: https://github.com/zero-88/robotframework-excel
+Author: zero
+Author-email: <sontt246@gmail.com>
+License: Apache License 2.0
+Download-URL: https://github.com/zero-88/robotframework-excel/tarball/1.0.0b4
+Keywords: robotframework testing testautomation excel
+Platform: any
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Software Development :: Quality Assurance
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, <4
+Requires-Dist: six (==1.11.0)
+Requires-Dist: natsort (==5.2.0)
+Requires-Dist: xlutils (==2.0.0)
+Requires-Dist: openpyxl (==2.5.1)
+Requires-Dist: robotframework (>=3.0)
+Requires-Dist: enum34 (==1.1.6)
+
+This test library provides some keywords to allow
+opening, reading, writing, and saving Excel files
+from Robot Framework.
+

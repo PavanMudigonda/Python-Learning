@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: robotframework-excellib
+Version: 2.0.1
+Summary: Robot Framework library for working with Excel documents
+Home-page: https://github.com/peterservice-rnd/robotframework-excellib
+Author: Nexign
+Author-email: MF_AIST_all@nexign-systems.com
+License: Apache License 2.0
+Keywords: testing testautomation robotframework excel
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Testing
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Framework :: Robot Framework :: Library
+Requires-Dist: openpyxl (>=2.4.1)
+Requires-Dist: robotframework (>=3.0.3)
+Requires-Dist: future (>=0.16.0) ; python_version <= "2.7"
+
+Robot Framework Excel Library
+=======================================
+
+|Build Status|
+
+Short Description
+-----------------
+
+`Robot Framework`_ library for working with Excel documents, based on `openpyxl`_.
+
+Installation
+------------
+
+::
+
+    pip install robotframework-excellib
+
+Documentation
+-------------
+
+See keyword documentation for robotframework-excellib library: docs_.
+
+Example
+-------
+
+.. code:: robotframework
+
+    *** Settings ***
+    Library    ExcelLibrary
+
+    *** Test Cases ***
+    Check created excel doc
+        ${document}=    Create Excel Document    doc_name
+        Should Be Equal As Strings    doc_name    ${document}
+
+
+License
+-------
+
+Apache License 2.0
+
+.. _Robot Framework: http://www.robotframework.org
+
+.. _openpyxl: https://pypi.python.org/pypi/openpyxl
+
+.. |Build Status| image:: https://travis-ci.org/peterservice-rnd/robotframework-excellib.svg?branch=master
+   :target: https://travis-ci.org/peterservice-rnd/robotframework-excellib
+
+.. _docs: https://rawgit.com/peterservice-rnd/robotframework-excellib/master/docs/ExcelLibrary.html
+

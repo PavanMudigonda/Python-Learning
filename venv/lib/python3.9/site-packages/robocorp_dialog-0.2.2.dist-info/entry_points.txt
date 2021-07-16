@@ -1,0 +1,3 @@
+[console_scripts]
+robocorp-dialog=robocorp_dialog.main:main
+
